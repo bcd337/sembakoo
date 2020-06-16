@@ -19,12 +19,19 @@ import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
 
+import Container from 'components/Container'
+import Sidebar from 'components/Sidebar'
+import AppBody from 'components/AppBody'
+
+import '@fortawesome/fontawesome-free/css/all.css'
+import 'resources/bootstrap.min.css'
+import 'rsuite/dist/styles/rsuite-default.css'
+
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  min-height: 100%;
-  padding: 0 16px;
+  min-height: 100vh;
+  padding: 0;
   flex-direction: column;
 `;
 
@@ -37,13 +44,18 @@ export default function App() {
       >
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
-      <Footer />
+      <Container>
+        <Sidebar />
+        <AppBody>
+           <Header />
+           <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/features" component={FeaturePage} />
+            <Route path="" component={NotFoundPage} />
+          </Switch>
+          <Footer />
+        </AppBody>
+      </Container>
       <GlobalStyle />
     </AppWrapper>
   );

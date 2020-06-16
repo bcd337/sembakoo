@@ -27,5 +27,11 @@
   "boilerplate.containers.HomePage.tryme.message": "Show Github repositories by",
   "boilerplate.containers.LocaleToggle.de": "de",
   "boilerplate.containers.LocaleToggle.en": "en",
-  "boilerplate.containers.NotFoundPage.header": "Page not found."
+  "boilerplate.containers.NotFoundPage.header": "Page not found.",
+
+  "boilerplate.components.Sidebar.title": "SEMBAKOO",
+  "boilerplate.components.Sidebar.dashboard": "Dashboard",
+  "boilerplate.components.Sidebar.keluhan_user": "Keluhan User",
+  "boilerplate.components.Sidebar.input_data": "Input Data",
+  "boilerplate.components.Sidebar.data_control": "Data Control"
 }
